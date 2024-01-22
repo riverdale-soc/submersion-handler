@@ -25,4 +25,5 @@ To minimize latency, the SPI bus is used to push raw bytes of MOB status payload
 ### ESP-NOW Payload
 ! MOB State | Latitude | Longitude | Altitude |
 | 1 byte    | 4 bytes  | 4 bytes   | 4 bytes  |  
+| --------  | -------- | --------- | -------- |
 
