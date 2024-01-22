@@ -21,7 +21,7 @@ Implements ESP32 module of submersion detection and location system to receive M
 * Push payload to SPI Master Queue
 
 ## Design Decisions
-To minimize latency, the SPI bus is used to push raw bytes of MOB status payload at 25Mhz. This removes need to parse ESP-NOW payload into strings and can be simply propagated as it came.
+To minimize latency, the SPI bus is used to push raw bytes of MOB status payload at 25Mhz. This removes need to parse ESP-NOW payload into strings and can be simply propagated as it came. This means payload can be propagated in 5.2 microseconds using the standard payload.
 ### ESP-NOW Payload
 | MOB State | Latitude | Longitude | Altitude |
 | --------  | -------- | --------- | -------- |
